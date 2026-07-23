@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Immersive UI Custom Theme & Metallic Glow Effects */
+  .bg-immersive-radial {
+    background: radial-gradient(circle at top right, #001a33 0%, #050505 45%);
+  }
+
+  .text-royal-gold {
+    color: #FFD700;
+  }
+
+  .text-electric-cyan {
+    color: #00BFFF;
+  }
+
+  .text-gold-gradient {
+    background: linear-gradient(180deg, #FFF6B7 0%, #FFD700 40%, #D4AF37 80%, #9f7928 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 6px rgba(212, 175, 55, 0.4));
+  }
+
+  .text-gold-shine {
+    background: linear-gradient(90deg, #FFD700 0%, #ffffff 25%, #FDB931 50%, #9f7928 75%, #FFD700 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: goldShine 3s linear infinite;
+  }
+
+  .bg-gold-gradient {
+    background: linear-gradient(135deg, #FFD700 0%, #D4AF37 50%, #9f7928 100%);
+  }
+
+  .bg-gold-button {
+    background: linear-gradient(180deg, #FFEC8B 0%, #FFC107 45%, #D4AF37 80%, #B8860B 100%);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  }
+
+  .bg-gold-button:hover {
+    background: linear-gradient(180deg, #FFF3B8 0%, #FFD54F 45%, #E6C200 80%, #C79100 100%);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
+
+  .bg-cyan-button {
+    background: linear-gradient(180deg, #00BFFF 0%, #0099DD 100%);
+    box-shadow: 0 4px 15px rgba(0, 191, 255, 0.35);
+  }
+
+  /* Card styling matching Immersive UI Design HTML */
+  .card-immersive-gold {
+    background-color: #0f0f0f;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 10px 30px -15px rgba(212, 175, 55, 0.2);
+  }
+
+  .card-immersive-cyan {
+    background-color: #0f0f0f;
+    border: 1px solid rgba(0, 191, 255, 0.3);
+    box-shadow: 0 10px 30px -15px rgba(0, 191, 255, 0.2);
+  }
+
+  .card-glass-dark {
+    background: rgba(15, 15, 15, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .shadow-cyan-glow {
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
+  }
+
+  .shadow-gold-glow {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+  }
+}
+
+@keyframes goldShine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}

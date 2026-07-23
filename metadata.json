@@ -1,0 +1,6 @@
+{
+  "name": "Jio247 Platform",
+  "description": "Jio247 Online Gaming and Admin Management Portal with sports betting, casino games, deposit/withdrawal gateways, real-time high-value deposit alerts, and Bengali admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
